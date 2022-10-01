@@ -18,11 +18,11 @@ function Game() {
             <Column gap={20}>
                 <div style={{"fontSize":"25px"}}>
                     {
-                        winner
-                        ? `Winner ${winner}`
-                        : gameState.step >= 9
-                        ? `Tie`
-                        :`Next Player: ${xIsNext ? 'X' : 'O'}`
+                            winner
+                            ? `Winner ${winner}`
+                            : gameState.step >= 9
+                            ? `Tie`
+                            :`Next Player: ${xIsNext ? 'X' : 'O'}`
                     }
                 </div>
                 <Board board={current} onClick={handleClick} />

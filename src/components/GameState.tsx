@@ -24,8 +24,8 @@ function calculateWinner(boardState: BoardState){
         if(boardState[a] && boardState[a] === boardState[b] && boardState[a] === boardState[c]) {
             return boardState[a];
         }
+    }
     return null;
-}
 }
 
 export type GameState = {
